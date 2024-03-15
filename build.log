@@ -1,0 +1,434 @@
+/usr/bin/make -j1  O=/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0 HOSTCC="/usr/bin/gcc" HOSTCXX="/usr/bin/g++" syncconfig
+  GEN     /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/Makefile
+[7m>>>   Finalizing host directory[27m
+[7m>>>   Finalizing target directory[27m
+mkdir -p /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/etc/meson
+sed -e "s%@TARGET_CFLAGS@%'-D_LARGEFILE_SOURCE', '-D_LARGEFILE64_SOURCE', '-D_FILE_OFFSET_BITS=64', '-O2', '-g2', '-D_FORTIFY_SOURCE=1'@PKG_TARGET_CFLAGS@%g" -e "s%@TARGET_LDFLAGS@%@PKG_TARGET_LDFLAGS@%g" -e "s%@TARGET_CXXFLAGS@%'-D_LARGEFILE_SOURCE', '-D_LARGEFILE64_SOURCE', '-D_FILE_OFFSET_BITS=64', '-O2', '-g2', '-D_FORTIFY_SOURCE=1'@PKG_TARGET_CXXFLAGS@%g" -e "s%@TARGET_FCFLAGS@%'-O2', '-g2'@PKG_TARGET_FCFLAGS@%g"         -e "s%@TARGET_CC@%/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/bin/aarch64-nerves-linux-gnu-gcc%g" -e "s%@TARGET_CXX@%/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/bin/aarch64-nerves-linux-gnu-g++%g" -e "s%@TARGET_AR@%/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/bin/aarch64-nerves-linux-gnu-gcc-ar%g" -e "s%@TARGET_FC@%/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/bin/aarch64-nerves-linux-gnu-gfortran%g" -e "s%@TARGET_STRIP@%/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/bin/aarch64-nerves-linux-gnu-strip%g" -e "s%@TARGET_ARCH@%aarch64%g" -e "s%@TARGET_CPU@%cortex-a72%g" -e "s%@TARGET_ENDIAN@%little%g" -e "s%@TARGET_FCFLAGS@%%g" -e "s%@TARGET_CFLAGS@%%g" -e "s%@TARGET_LDFLAGS@%%g" -e "s%@TARGET_CXXFLAGS@%%g" -e "s%@BR2_CMAKE@%/usr/bin/cmake%g" -e "s%@PKGCONF_HOST_BINARY@%/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/bin/pkgconf%g" -e "s%@HOST_DIR@%/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host%g" -e "s%@STAGING_DIR@%/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/aarch64-buildroot-linux-gnu/sysroot%g" -e "s%@STATIC@%false%g" /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_br/buildroot-2023.11.1/support/misc/cross-compilation.conf.in > /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/etc/meson/cross-compilation.conf.in
+sed         -e "s%@TARGET_CC@%/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/bin/aarch64-nerves-linux-gnu-gcc%g" -e "s%@TARGET_CXX@%/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/bin/aarch64-nerves-linux-gnu-g++%g" -e "s%@TARGET_AR@%/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/bin/aarch64-nerves-linux-gnu-gcc-ar%g" -e "s%@TARGET_FC@%/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/bin/aarch64-nerves-linux-gnu-gfortran%g" -e "s%@TARGET_STRIP@%/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/bin/aarch64-nerves-linux-gnu-strip%g" -e "s%@TARGET_ARCH@%aarch64%g" -e "s%@TARGET_CPU@%cortex-a72%g" -e "s%@TARGET_ENDIAN@%little%g" -e "s%@TARGET_FCFLAGS@%'-O2', '-g2'%g" -e "s%@TARGET_CFLAGS@%'-D_LARGEFILE_SOURCE', '-D_LARGEFILE64_SOURCE', '-D_FILE_OFFSET_BITS=64', '-O2', '-g2', '-D_FORTIFY_SOURCE=1'%g" -e "s%@TARGET_LDFLAGS@%%g" -e "s%@TARGET_CXXFLAGS@%'-D_LARGEFILE_SOURCE', '-D_LARGEFILE64_SOURCE', '-D_FILE_OFFSET_BITS=64', '-O2', '-g2', '-D_FORTIFY_SOURCE=1'%g" -e "s%@BR2_CMAKE@%/usr/bin/cmake%g" -e "s%@PKGCONF_HOST_BINARY@%/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/bin/pkgconf%g" -e "s%@HOST_DIR@%/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host%g" -e "s%@STAGING_DIR@%/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/aarch64-buildroot-linux-gnu/sysroot%g" -e "s%@STATIC@%false%g" /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_br/buildroot-2023.11.1/support/misc/cross-compilation.conf.in > /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/etc/meson/cross-compilation.conf
+if grep -q CONFIG_ASH=y /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/busybox-1.36.1/.config; then grep -qsE '^/bin/ash$' /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/etc/shells || echo "/bin/ash" >> /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/etc/shells; fi
+if grep -q CONFIG_HUSH=y /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/busybox-1.36.1/.config; then grep -qsE '^/bin/hush$' /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/etc/shells || echo "/bin/hush" >> /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/etc/shells; fi
+# Remove any existing certificates under /etc/ssl/certs
+rm -f /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/etc/ssl/certs/*
+# Create symlinks to certificates under /etc/ssl/certs
+# and generate the bundle
+cd /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target ; for i in `find usr/share/ca-certificates -name "*.crt" | LC_COLLATE=C sort` ; do ln -sf ../../../$i etc/ssl/certs/`basename ${i} .crt`.pem ; cat $i ; done >/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/ca-certificates.crt
+# Create symlinks to the certificates by their hash values
+/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/bin/c_rehash /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/etc/ssl/certs
+Doing /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/etc/ssl/certs
+# Install the certificates bundle
+/usr/bin/install -D -m 644 /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/ca-certificates.crt /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/etc/ssl/certs/ca-certificates.crt
+if test -d /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/lib/modules/`MAKEFLAGS='--no-print-directory' /usr/bin/make -j13 HOSTCC="/usr/bin/gcc -O2 -isystem /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/include -L/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/lib -Wl,-rpath,/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/lib" ARCH=arm64 INSTALL_MOD_PATH=/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target CROSS_COMPILE="/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/bin/aarch64-nerves-linux-gnu-" WERROR=0 REGENERATE_PARSERS=1 DEPMOD=/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/sbin/depmod INSTALL_MOD_STRIP=1 -C /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/linux-custom --no-print-directory -s kernelrelease 2>/dev/null` && grep -q "CONFIG_MODULES=y" /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/linux-custom/.config; then /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/sbin/depmod -a -b /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target `MAKEFLAGS='--no-print-directory' /usr/bin/make -j13 HOSTCC="/usr/bin/gcc -O2 -isystem /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/include -L/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/lib -Wl,-rpath,/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/lib" ARCH=arm64 INSTALL_MOD_PATH=/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target CROSS_COMPILE="/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/bin/aarch64-nerves-linux-gnu-" WERROR=0 REGENERATE_PARSERS=1 DEPMOD=/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/sbin/depmod INSTALL_MOD_STRIP=1 -C /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/linux-custom --no-print-directory -s kernelrelease 2>/dev/null`; fi
+cp /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/fwup.conf /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/cmdline.txt /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/config.txt /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/images
+/usr/bin/make -j13 -f support/misc/gen-glibc-locales.mk ENDIAN="little" LOCALES="en_US.UTF-8" Q=@
+Generating locale en_US.UTF-8
+Adding /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/lib/locale/en_US.utf8
+printf '%s\n' locale-archive locale-archive > /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/locales.nopurge
+for dir in /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/share/locale /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/share/X11/locale /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/lib/locale; do if [ ! -d $dir ]; then continue; fi; for langdir in $dir/*; do if [ -e "${langdir}" ]; then grep -qx "${langdir##*/}" /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/locales.nopurge || rm -rf $langdir; fi done; done
+if [ -d /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/share/X11/locale ]; then for lang in locale-archive; do if [ -f /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/share/X11/locale/$lang/XLC_LOCALE ]; then echo "$lang/XLC_LOCALE: $lang"; fi done > /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/share/X11/locale/locale.dir; fi
+rm -rf /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/include /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/share/aclocal \
+	/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/lib/pkgconfig /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/share/pkgconfig \
+	/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/lib/cmake /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/share/cmake \
+	/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/lib/rpm /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/doc
+find /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/{lib,share}/ -name '*.cmake' -print0 | xargs -0 rm -f
+find /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/lib/ /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/lib/ /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/libexec/ \
+	\( -name '*.a' -o -name '*.la' -o -name '*.prl' \) -print0 | xargs -0 rm -f
+rm -rf /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/share/gdb
+rm -rf /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/share/bash-completion
+rm -rf /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/etc/bash_completion.d
+rm -rf /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/share/zsh
+rm -rf /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/man /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/share/man
+rm -rf /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/info /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/share/info
+rm -rf /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/doc /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/share/doc
+rm -rf /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/share/gtk-doc
+rmdir /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/share 2>/dev/null || true
+rm -rf /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/lib/debug /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/lib/debug
+find /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target   -type f \( -perm /111 -o -name '*.so*' \) -not \( -name 'libpthread*.so*' -o -name 'ld-*.so*' -o -name '*.ko' \) -print0 | xargs -0 /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/bin/aarch64-nerves-linux-gnu-strip --remove-section=.comment --remove-section=.note 2>/dev/null || true
+find /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target   \( -name 'ld-*.so*' -o -name 'libpthread*.so*' \) -print0 | xargs -0 -r /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/bin/aarch64-nerves-linux-gnu-strip --remove-section=.comment --remove-section=.note --strip-debug 2>/dev/null || true
+test -f /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/etc/ld.so.conf && \
+	{ echo "ERROR: we shouldn't have a /etc/ld.so.conf file"; exit 1; } || true
+test -d /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/etc/ld.so.conf.d && \
+	{ echo "ERROR: we shouldn't have a /etc/ld.so.conf.d directory"; exit 1; } || true
+mkdir -p /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/etc
+( \
+	echo "NAME=Buildroot"; \
+	echo "VERSION=-gebd92fa-dirty"; \
+	echo "ID=buildroot"; \
+	echo "VERSION_ID=2023.11.1"; \
+	echo "PRETTY_NAME=\"Buildroot 2023.11.1\"" \
+) >  /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr/lib/os-release
+ln -sf ../usr/lib/os-release /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/etc
+[7m>>>   Sanitizing RPATH in target tree[27m
+PARALLEL_JOBS=13 \
+	PER_PACKAGE_DIR=/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/per-package \
+	/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_br/buildroot-2023.11.1/support/scripts/fix-rpath target
+[7m>>>   Copying overlay /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_br/board/nerves-common/rootfs_overlay[27m
+[7m>>>   Copying overlay /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/rootfs_overlay[27m
+[7m>>>   Executing post-build script /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/post-build.sh[27m
+~/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/aarch64-buildroot-linux-gnu/sysroot/usr/lib/dri ~/Development/nerves_poncho/firmware/deps/nerves_system_br/buildroot-2023.11.1
+~/Development/nerves_poncho/firmware/deps/nerves_system_br/buildroot-2023.11.1
+[7m>>>   Executing post-build script /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_br/board/nerves-common/post-build.sh[27m
+If the next line fails, add the following to nerves_defconfig and build clean (sorry):
+  BR2_ROOTFS_SKELETON_CUSTOM=y
+  BR2_ROOTFS_SKELETON_CUSTOM_PATH="${BR2_EXTERNAL_NERVES_PATH}/board/nerves-common/skeleton"
+touch /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/usr
+[7m>>>   Generating root filesystems common tables[27m
+rm -rf /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs
+mkdir -p /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs
+printf '   	- - docker -1 * - - - Docker Application Container Framework\n 	mosquitto -1 mosquitto -1 * - - - Mosquitto user\n\n' >> /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/full_users_table.txt
+printf '   	/bin/busybox                     f 4755 0  0 - - - - -\n\n' > /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/full_devices_table.txt
+cat /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_br/board/nerves-common/device_table.txt >> /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/full_devices_table.txt
+[7m>>>   Generating filesystem image rootfs.squashfs[27m
+mkdir -p /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/images
+rm -rf /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs
+mkdir -p /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs
+rsync -auH --exclude=/THIS_IS_NOT_YOUR_ROOT_FILESYSTEM /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/target/ /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/target
+echo '#!/bin/sh' > /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/fakeroot
+echo "set -e" >> /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/fakeroot
+echo "chown -h -R 0:0 /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/target" >> /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/fakeroot
+PATH="/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/bin:/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/sbin:/home/pizzuto/.asdf/installs/erlang/26.2.2/erts-14.2.2/bin:/home/pizzuto/.asdf/installs/erlang/26.2.2/bin:/home/pizzuto/.asdf/plugins/elixir/shims:/home/pizzuto/.asdf/installs/elixir/1.16.1-otp-26/bin:/home/pizzuto/.asdf/installs/elixir/1.16.1-otp-26/.mix/escripts:/home/pizzuto/.asdf/shims:/home/pizzuto/.asdf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin" /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_br/buildroot-2023.11.1/support/scripts/mkusers /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/full_users_table.txt /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/target >> /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/fakeroot
+echo "/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/bin/makedevs -d /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/full_devices_table.txt /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/target" >> /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/fakeroot
+printf '   	rm -rf /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/target/usr/lib/udev/hwdb.d/ /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/target/etc/udev/hwdb.d/\n' >> /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/fakeroot
+echo "find /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/target/run/ -mindepth 1 -prune -print0 | xargs -0r rm -rf --" >> /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/fakeroot
+echo "find /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/target/tmp/ -mindepth 1 -prune -print0 | xargs -0r rm -rf --" >> /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/fakeroot
+printf '   	find /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/target -print0 | xargs -0 -r touch -hd @1591379755\n' >> /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/fakeroot
+printf '   \n' >> /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/fakeroot
+printf '   	/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/bin/mksquashfs /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/target /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/images/rootfs.squashfs -noappend -processors 13 -b 128K  -comp gzip -e srv\n' >> /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/fakeroot
+chmod a+x /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/fakeroot
+PATH="/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/bin:/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/sbin:/home/pizzuto/.asdf/installs/erlang/26.2.2/erts-14.2.2/bin:/home/pizzuto/.asdf/installs/erlang/26.2.2/bin:/home/pizzuto/.asdf/plugins/elixir/shims:/home/pizzuto/.asdf/installs/elixir/1.16.1-otp-26/bin:/home/pizzuto/.asdf/installs/elixir/1.16.1-otp-26/.mix/escripts:/home/pizzuto/.asdf/shims:/home/pizzuto/.asdf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin" FAKEROOTDONTTRYCHOWN=1 /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/host/bin/fakeroot -- /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/fakeroot
+rootdir=/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/squashfs/target
+table='/home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/build/buildroot-fs/full_devices_table.txt'
+Parallel mksquashfs: Using 13 processors
+Creating 4.0 filesystem on /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/images/rootfs.squashfs, block size 131072.
+[=========/                                                    ]  400/2670  14%[=============================================================\] 2670/2670 100%
+
+Exportable Squashfs 4.0 filesystem, gzip compressed, data block size 131072
+	compressed data, compressed metadata, compressed fragments,
+	compressed xattrs, compressed ids
+	duplicates are removed
+Filesystem size 83971.36 Kbytes (82.00 Mbytes)
+	35.69% of uncompressed filesystem size (235300.95 Kbytes)
+Inode table size 25005 bytes (24.42 Kbytes)
+	29.13% of uncompressed inode table size (85833 bytes)
+Directory table size 22417 bytes (21.89 Kbytes)
+	47.42% of uncompressed directory table size (47269 bytes)
+Number of duplicate files found 7
+Number of inodes 1939
+Number of files 1007
+Number of fragments 154
+Number of symbolic links 750
+Number of device nodes 0
+Number of fifo nodes 0
+Number of socket nodes 0
+Number of directories 182
+Number of hard-links 29
+Number of ids (unique uids + gids) 1
+Number of uids 1
+	root (0)
+Number of gids 1
+	root (0)
+[7m>>>   Executing post-image script /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/post-createfs.sh[27m
+[7m>>>   Buildroot -gebd92fa-dirty Collecting legal info[27m
+COPYING: OK (sha256: 9755181e27175cb3510b4da8629caa406fb355a19aa8e7d55f06bf8ab33323c4)
+[7m>>> toolchain-external  Collecting legal info[27m
+[7m>>> host-fakedate  Collecting legal info[27m
+[7m>>> host-skeleton  Collecting legal info[27m
+[7m>>> skeleton  Collecting legal info[27m
+[7m>>> skeleton-custom  Collecting legal info[27m
+[7m>>> toolchain-external-custom  Collecting legal info[27m
+[7m>>> toolchain  Collecting legal info[27m
+[7m>>> alsa-lib 1.2.10 Collecting legal info[27m
+COPYING: OK (sha256: 32434afcc8666ba060e111d715bfdb6c2d5dd8a35fa4d3ab8ad67d8f850d2f2b)
+aserver/COPYING: OK (sha256: bfe16cf823bcff261fc6a062c07ee96660e3c39678f42f39a788a68dbc234ced)
+[7m>>> host-autoconf 2.71 Collecting legal info[27m
+COPYINGv3: OK (sha256: 3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986)
+COPYING.EXCEPTION: OK (sha256: 1f1cde9fb68b9b3cff18c420894bec5bd4defacd700b7d13df54a887301e5350)
+[7m>>> host-libtool 2.4.6 Collecting legal info[27m
+COPYING: OK (sha256: 8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643)
+libltdl/COPYING.LIB: OK (sha256: dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551)
+[7m>>> host-m4 1.4.19 Collecting legal info[27m
+COPYING: OK (sha256: 3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986)
+[7m>>> host-automake 1.16.5 Collecting legal info[27m
+COPYING: OK (sha256: ab15fd526bd8dd18a9e77ebc139656bf4d33e97fc7238cd11bf60e2b9b8666c6)
+[7m>>> alsa-utils 1.2.10 Collecting legal info[27m
+COPYING: OK (sha256: 231f7edcc7352d7734a96eef0b8030f77982678c516876fcb81e25b32d68564c)
+[7m>>> host-pkgconf 1.6.3 Collecting legal info[27m
+COPYING: OK (sha256: 07ee94b50a41ee3fc4e13a9b9c60b26fc28488494c465639f7e5f07a3952ec04)
+[7m>>> ncurses 6.4-20230603 Collecting legal info[27m
+COPYING: OK (sha256: 0413b2f4ea863194c174673032f0fca84f1ea1ed4eed6476baea68c075a631ce)
+[7m>>> host-ncurses 6.4-20230603 Collecting legal info[27m
+COPYING: OK (sha256: 0413b2f4ea863194c174673032f0fca84f1ea1ed4eed6476baea68c075a631ce)
+[7m>>> boost 1.83.0 Collecting legal info[27m
+LICENSE_1_0.txt: OK (sha256: c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566)
+[7m>>> btrfs-progs 5.16.2 Collecting legal info[27m
+COPYING: OK (sha256: 0d5bf346df9e635a29dcdddf832dc5b002ca6cdc1c5c9c6c567d2a61bb0c5c15)
+libbtrfsutil/COPYING: OK (sha256: dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551)
+[7m>>> lzo 2.10 Collecting legal info[27m
+COPYING: OK (sha256: 8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643)
+[7m>>> util-linux 2.39.2 Collecting legal info[27m
+README.licensing: OK (sha256: 64dfeae1519bf0e27563d905a71264310fb6a8fa74e5cf99bb36e4d30d7ef455)
+Documentation/licenses/COPYING.BSD-3-Clause: OK (sha256: 9b718a9460fed5952466421235bc79eb49d4e9eacc920d7a9dd6285ab8fd6c6d)
+Documentation/licenses/COPYING.BSD-4-Clause-UC: OK (sha256: ba7640f00d93e72e92b94b9d71f25ec53bac2f1682f5c4adcccb0018359f60f8)
+Documentation/licenses/COPYING.GPL-2.0-or-later: OK (sha256: 8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643)
+Documentation/licenses/COPYING.ISC: OK (sha256: e53348ce276358e9997014071c5294b36a18c4b34f32f00ee57b9acce0aafd63)
+Documentation/licenses/COPYING.LGPL-2.1-or-later: OK (sha256: dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551)
+[7m>>> zlib  Collecting legal info[27m
+[7m>>> libzlib 1.3 Collecting legal info[27m
+LICENSE: OK (sha256: 845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243)
+[7m>>> busybox 1.36.1 Collecting legal info[27m
+LICENSE: OK (sha256: bbfc9843646d483c334664f651c208b9839626891d8f17604db2146962f43548)
+archival/libarchive/bz/LICENSE: OK (sha256: b5a136ed67798e51fe2e0ca0b2a21cb01b904ff0c9f7d563a6292e276607e58f)
+[7m>>> coreutils 9.3 Collecting legal info[27m
+COPYING: OK (sha256: 3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986)
+[7m>>> gmp 6.3.0 Collecting legal info[27m
+COPYING.LESSERv3: OK (sha256: a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c)
+COPYINGv2: OK (sha256: 8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643)
+[7m>>> libcap 2.69 Collecting legal info[27m
+License: OK (sha256: 68467e731f4744bd6e0bb69e8df9c3a994e09cd6b203d0c41327ac6d079c581d)
+[7m>>> host-gperf 3.1 Collecting legal info[27m
+COPYING: OK (sha256: 8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903)
+[7m>>> openssl  Collecting legal info[27m
+[7m>>> libopenssl 3.1.4 Collecting legal info[27m
+LICENSE.txt: OK (sha256: 7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a)
+[7m>>> gawk 5.2.2 Collecting legal info[27m
+COPYING: OK (sha256: 8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903)
+[7m>>> host-gawk 5.2.2 Collecting legal info[27m
+COPYING: OK (sha256: 8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903)
+[7m>>> ca-certificates 20230311 Collecting legal info[27m
+debian/copyright: OK (sha256: e85e1bcad3a915dc7e6f41412bc5bdeba275cadd817896ea0451f2140a93967c)
+[7m>>> host-openssl  Collecting legal info[27m
+[7m>>> host-libopenssl 3.1.4 Collecting legal info[27m
+LICENSE.txt: OK (sha256: 7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a)
+[7m>>> host-zlib  Collecting legal info[27m
+[7m>>> host-libzlib 1.3 Collecting legal info[27m
+LICENSE: OK (sha256: 845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243)
+[7m>>> host-python3 3.11.6 Collecting legal info[27m
+LICENSE: OK (sha256: 3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf)
+[7m>>> host-autoconf-archive 2023.02.20 Collecting legal info[27m
+COPYING: OK (sha256: e6037104443f9a7829b2aa7c5370d0789a7bda3ca65a0b904cdc0c2e285d9195)
+COPYING.EXCEPTION: OK (sha256: 23ed0b84fa023bfa33433b498192cd08a3bfb1f4864a8ed791a84f3eb48b2dd2)
+[7m>>> host-expat 2.5.0 Collecting legal info[27m
+COPYING: OK (sha256: 122f2c27000472a201d337b9b31f7eb2b52d091b02857061a8880371612d9534)
+[7m>>> host-libffi 3.4.4 Collecting legal info[27m
+LICENSE: OK (sha256: 2c9c2acb9743e6b007b91350475308aee44691d96aa20eacef8e199988c8c388)
+[7m>>> cairo 1.16.0 Collecting legal info[27m
+COPYING: OK (sha256: 67228a9f7c5f9b67c58f556f1be178f62da4d9e2e6285318d8c74d567255abdf)
+COPYING-LGPL-2.1: OK (sha256: 9e9e8608c4cdda51a78cc3a385f4ec9a2e4c96d5ecad74ac8bca5fca3e563b7d)
+COPYING-MPL-1.1: OK (sha256: 53692a2ed6c6a2c6ec9b32dd0b820dfae91e0a1fcdf625ca9ed0bdf8705fcc4f)
+[7m>>> fontconfig 2.14.2 Collecting legal info[27m
+COPYING: OK (sha256: 51a51aa9823704fd90bccc616cdd17ebabb5b2b3e9cbde886ca02c7002288067)
+[7m>>> expat 2.5.0 Collecting legal info[27m
+COPYING: OK (sha256: 122f2c27000472a201d337b9b31f7eb2b52d091b02857061a8880371612d9534)
+[7m>>> freetype 2.13.2 Collecting legal info[27m
+LICENSE.TXT: OK (sha256: 2e3bbb7d7c5c396368dd0853a790ec29ce5b8647163dde42a0493fb0d6556b2b)
+docs/FTL.TXT: OK (sha256: 08c135755dd589039470f1fdbb400daaabaaa50d0b366d19cebff4d22986baa1)
+docs/GPLv2.TXT: OK (sha256: c4120c6752c910c299e3bd9cb3a46ff262c268303ca2069b61f92f10a5656c18)
+[7m>>> libpng 1.6.40 Collecting legal info[27m
+LICENSE: OK (sha256: 5c0bb4b05b1354ae7c173532b6702ea68b611047ff9b91c4d3af77da39c195d9)
+[7m>>> libgles  Collecting legal info[27m
+[7m>>> mesa3d 23.2.1 Collecting legal info[27m
+docs/license.rst: OK (sha256: a00275a53178e2645fb65be99a785c110513446a5071ff2c698ed260ad917d75)
+[7m>>> host-bison 3.8.2 Collecting legal info[27m
+COPYING: OK (sha256: 3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986)
+[7m>>> host-flex 2.6.4 Collecting legal info[27m
+COPYING: OK (sha256: 97fd685958d93be7f8dab939bb8161dbd6afb0718c63bfc337c24321aea44273)
+[7m>>> host-gettext  Collecting legal info[27m
+[7m>>> host-gettext-tiny 0.3.2 Collecting legal info[27m
+LICENSE: OK (sha256: 4c938aa3d8fa3c184bba5e87a8a2febc89560627c9d0567536879e3eca1a7b4f)
+extra/COPYING: OK (sha256: e79e9c8a0c85d735ff98185918ec94ed7d175efc377012787aebcf3b80f0d90b)
+[7m>>> host-meson 1.1.1 Collecting legal info[27m
+COPYING: OK (sha256: cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30)
+[7m>>> host-ninja 1.11.1.g95dee.kitware.jobserver-1 Collecting legal info[27m
+COPYING: OK (sha256: eb7e9ab9690124c5c9f42bdc81383d886a3dede26345b6ed15bbad7caf81f7ea)
+[7m>>> host-python-setuptools 68.2.2 Collecting legal info[27m
+LICENSE: OK (sha256: 86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741)
+[7m>>> host-python-installer 0.7.0 Collecting legal info[27m
+LICENSE: OK (sha256: 37b8b9f2569892fa54406383d431169dbb2115980d78b7efba6eeae5664c484f)
+[7m>>> host-python-flit-core 3.9.0 Collecting legal info[27m
+LICENSE: OK (sha256: 35b4f1dec512e617077fd6980dbb43ef8c2887adc5d0185edb4c04da175dd816)
+[7m>>> host-python-pypa-build 1.0.3 Collecting legal info[27m
+LICENSE: OK (sha256: aaf9a29ca5907971ccf07de025375db34539a8d5eeebce20b46099805722106f)
+[7m>>> host-python-packaging 23.1 Collecting legal info[27m
+LICENSE: OK (sha256: cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48)
+LICENSE.APACHE: OK (sha256: 0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594)
+LICENSE.BSD: OK (sha256: b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5)
+[7m>>> host-python-pyproject-hooks 1.0.0 Collecting legal info[27m
+LICENSE: OK (sha256: 1b22b049b5267d6dfc23a67bf4a84d8ec04b9fdfb1a51d360e42b4342c8b4154)
+[7m>>> host-python-wheel 0.40.0 Collecting legal info[27m
+LICENSE.txt: OK (sha256: 30c23618679108f3e8ea1d2a658c7ca417bdfc891c98ef1a89fa4ff0c9828654)
+[7m>>> host-python-mako 1.2.4 Collecting legal info[27m
+LICENSE: OK (sha256: 760f22b3e9ea4a50eb99201bd8dd118869f28108cfb64ccce6d1b305cf9ae9fa)
+[7m>>> host-python-markupsafe 2.1.3 Collecting legal info[27m
+LICENSE.rst: OK (sha256: 489a8e1108509ed98a37bb983e11e0f7e1d31f0bd8f99a79c8448e7ff37d07ea)
+[7m>>> libdrm 2.4.117 Collecting legal info[27m
+data/meson.build: OK (sha256: d0a616a9020dc0271e36e6dd4bad174b4e2c2a42636f13785f8e18dd5f85fd83)
+[7m>>> libpthread-stubs 0.5 Collecting legal info[27m
+COPYING: OK (sha256: 78c20706e799f2b8f445e71d3d2ade6ba23b3388fd6cbeed7d71796623febde8)
+[7m>>> pixman 0.42.2 Collecting legal info[27m
+COPYING: OK (sha256: fac9270f0987b96ff4533fca3548c633e02083cbba4a0172a3b149b2e4019793)
+[7m>>> cgroupfs-mount 1.4 Collecting legal info[27m
+debian/copyright: OK (sha256: e52f47a650734f70c40c8fd9318f85e42777bf3fba7ff1dfb72f845bb417f7e6)
+[7m>>> containerd 1.7.8 Collecting legal info[27m
+LICENSE: OK (sha256: 4bbe3b885e8cd1907ab4cf9a41e862e74e24b5422297a4f2fe524e6a30ada2b4)
+[7m>>> host-go 1.21.6 Collecting legal info[27m
+LICENSE: OK (sha256: 2d36597f7117c38b006835ae7f537487207d8ec407aa9d9980794b2030cbc067)
+[7m>>> host-go-bootstrap-stage2 1.19.11 Collecting legal info[27m
+LICENSE: OK (sha256: 2d36597f7117c38b006835ae7f537487207d8ec407aa9d9980794b2030cbc067)
+[7m>>> host-go-bootstrap-stage1 1.4-bootstrap-20171003 Collecting legal info[27m
+LICENSE: OK (sha256: dd26a7abddd02e2d0aba97805b31f248ef7835d9e10da289b22e3b8ab78b324d)
+[7m>>> libseccomp 2.5.4 Collecting legal info[27m
+LICENSE: OK (sha256: 102900208eef27b766380135906d431dba87edaa7ec6aa72e6ebd3dd67f3a97b)
+[7m>>> docker-cli 24.0.7 Collecting legal info[27m
+LICENSE: OK (sha256: 2d81ea060825006fc8f3fe28aa5dc0ffeb80faf325b612c955229157b8c10dc0)
+[7m>>> docker-engine 24.0.7 Collecting legal info[27m
+LICENSE: OK (sha256: 7c87873291f289713ac5df48b1f2010eb6963752bbd6b530416ab99fc37914a8)
+[7m>>> lvm2 2.03.14 Collecting legal info[27m
+COPYING: OK (sha256: e76fbcd2fb97cf202da330301327754d2db5c58b5b4bebd3a8a749393e7603d1)
+COPYING.LIB: OK (sha256: 5df07007198989c622f5d41de8d703e7bef3d0e79d62e24332ee739a452af62a)
+[7m>>> libaio 0.3.113 Collecting legal info[27m
+COPYING: OK (sha256: 5bbcbb737e60fe9deba08ecbd00920cfcc3403ba2e534c64fdeea49d6bb87509)
+[7m>>> dtc 1.7.0 Collecting legal info[27m
+README.license: OK (sha256: 78e1e1ce5728a990d59c7de61d4741c49185d5129daf783b386380a214328d68)
+GPL: OK (sha256: 8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643)
+BSD-2-Clause: OK (sha256: 6313108c23efffa36948f8b2cff1560a5935373b527b0e1a837cc77e6ed1bacd)
+[7m>>> libyaml 0.2.5 Collecting legal info[27m
+License: OK (sha256: c40112449f254b9753045925248313e9270efa36d226b22d82d4cc6c43c57f29)
+[7m>>> erlang 26.2.2 Collecting legal info[27m
+LICENSE.txt: OK (sha256: 809fa1ed21450f59827d1e9aec720bbc4b687434fa22283c6cb5dd82a47ab9c0)
+[7m>>> host-erlang 26.2.2 Collecting legal info[27m
+LICENSE.txt: OK (sha256: 809fa1ed21450f59827d1e9aec720bbc4b687434fa22283c6cb5dd82a47ab9c0)
+[7m>>> unixodbc 2.3.12 Collecting legal info[27m
+COPYING: OK (sha256: a6b9aa1e9bfade121164c06fd975e9b913a8e38bf33d25ff967dfa3ed07d12f8)
+exe/COPYING: OK (sha256: 1e594f4c7fd6d099eca4bd1340b39d871ce0298331d8ebd4b68935548ee45cf4)
+[7m>>> f2fs-tools 1.16.0 Collecting legal info[27m
+COPYING: OK (sha256: 662abb3a8a80b36ae7036c289dd1e03b361ee5dd2e6fd5211d0d8d029146449f)
+[7m>>> fwup 1.10.1 Collecting legal info[27m
+LICENSE: OK (sha256: cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30)
+[7m>>> libarchive 3.7.2 Collecting legal info[27m
+COPYING: OK (sha256: b2cdf763345de2de34cebf54394df3c61a105c3b71288603c251f2fa638200ba)
+[7m>>> nettle 3.9.1 Collecting legal info[27m
+COPYING.LESSERv3: OK (sha256: a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c)
+COPYINGv2: OK (sha256: 8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643)
+[7m>>> libconfuse 3.3 Collecting legal info[27m
+LICENSE: OK (sha256: dc3ff4b62f851dd2e94a151061ffeb7d28ddfc880a442068dc5283dbaa927306)
+[7m>>> host-fwup 1.10.1 Collecting legal info[27m
+LICENSE: OK (sha256: cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30)
+[7m>>> host-libarchive 3.7.2 Collecting legal info[27m
+COPYING: OK (sha256: b2cdf763345de2de34cebf54394df3c61a105c3b71288603c251f2fa638200ba)
+[7m>>> host-libconfuse 3.3 Collecting legal info[27m
+LICENSE: OK (sha256: dc3ff4b62f851dd2e94a151061ffeb7d28ddfc880a442068dc5283dbaa927306)
+[7m>>> gnutls 3.8.2 Collecting legal info[27m
+doc/COPYING.LESSER: OK (sha256: dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551)
+[7m>>> libtasn1 4.19.0 Collecting legal info[27m
+COPYING: OK (sha256: 7446831f659f7ebfd8d497acc7f05dfa8e31c6cb6ba1b45df33d4895ab80f5a6)
+doc/COPYING: OK (sha256: 8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903)
+doc/COPYING.LESSER: OK (sha256: dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551)
+[7m>>> libunistring 1.1 Collecting legal info[27m
+COPYING: OK (sha256: 8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903)
+COPYING.LIB: OK (sha256: a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c)
+[7m>>> inotify-tools 3.20.2.2 Collecting legal info[27m
+COPYING: OK (sha256: e41fc126320a79ed53b5aa3386f059f7d10770856d6fd714ab80a96ce6bd09d6)
+[7m>>> iptables 1.8.9 Collecting legal info[27m
+COPYING: OK (sha256: 8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643)
+[7m>>> jpeg-turbo 2.1.5 Collecting legal info[27m
+LICENSE.md: OK (sha256: 60c756742db3ad1913304e8b13f0e86e22e51adb50cc0b3333c163f7e45ceec1)
+README.ijg: OK (sha256: 4b7b9f8c03bb8d60270dfd12684e70ab21e4abfd27e73905cd1a7c4cae6f5cdb)
+[7m>>> jpeg  Collecting legal info[27m
+[7m>>> host-kmod 31 Collecting legal info[27m
+libkmod/COPYING: OK (sha256: 6095e9ffa777dd22839f7801aa845b31c9ed07f3d6bf8a26dc5d2dec8ccc0ef3)
+[7m>>> libcamera-apps 1.2.1 Collecting legal info[27m
+license.txt: OK (sha256: 36dfed86bdef661a0a14ec1a1cc84c771d5a06b6f9b92e9ebb610ba711bd528a)
+[7m>>> libcamera v0.1.0 Collecting legal info[27m
+LICENSES/LGPL-2.1-or-later.txt: OK (sha256: 1ccf09bf2f598308df4bed9cd8e9657dc5cd0973d2800318f2e241486e2edf3f)
+LICENSES/GPL-2.0-or-later.txt: OK (sha256: 606aa26338f69ce178f1cbc648b7574aec4b5bbaeb20f4df36ff49010cb8fbbd)
+LICENSES/MIT.txt: OK (sha256: 8f25018489d6fe0dec34a352314c38dc146247b7de65735790f4398a92afa84b)
+LICENSES/BSD-2-Clause.txt: OK (sha256: fd38b2c053c0cce46d9c5ef3545a6e34d157a240ba99c9b8dca5d37a8147da6c)
+LICENSES/GPL-2.0-only.txt: OK (sha256: 8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643)
+LICENSES/Linux-syscall-note.txt: OK (sha256: 3f9e477523febab58de8b716ccfbcf02e6ef1c8e7728953905e8558637abe2a9)
+LICENSES/BSD-3-Clause.txt: OK (sha256: e11af671c491efac2f94c1d752bea92f4308ca2450c7d11e582e4b48c40e4de1)
+LICENSES/CC0-1.0.txt: OK (sha256: 6a573fb2f9082662978cf21fb153096df0a1981deaea7dbc10a11046fe005d9f)
+LICENSES/CC-BY-SA-4.0.txt: OK (sha256: ec3732087acf8c52429a020d6bba362ff578705bdb53365a21744485ec15b0e6)
+[7m>>> host-python-jinja2 3.1.2 Collecting legal info[27m
+LICENSE.rst: OK (sha256: 3b49dcee4105eb37bac10faf1be260408fe85d252b8e9df2e0979fc1e094437b)
+[7m>>> host-python-ply 3.11 Collecting legal info[27m
+README.md: OK (sha256: 1095b93b81d2043c5c55e0859875b416f75edb6d5eccb4bf2ace1b5445d1c84f)
+[7m>>> host-python-pyyaml 6.0.1 Collecting legal info[27m
+LICENSE: OK (sha256: 8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4)
+[7m>>> host-libyaml 0.2.5 Collecting legal info[27m
+License: OK (sha256: c40112449f254b9753045925248313e9270efa36d226b22d82d4cc6c43c57f29)
+[7m>>> tiff 4.6.0 Collecting legal info[27m
+LICENSE.md: OK (sha256: 0780558a8bfba0af1160ec1ff11ade4f41c0d7deafd6ecfc796b492a788e380d)
+[7m>>> libexif 0.6.24 Collecting legal info[27m
+COPYING: OK (sha256: 36b6d3fa47916943fd5fec313c584784946047ec1337a78b440e5992cb595f89)
+[7m>>> libmnl 1.0.5 Collecting legal info[27m
+COPYING: OK (sha256: dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551)
+[7m>>> libnl 3.7.0 Collecting legal info[27m
+COPYING: OK (sha256: dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551)
+[7m>>> libp11 0.4.11 Collecting legal info[27m
+COPYING: OK (sha256: d80c9d084ebfb50ea1ed91bfbc2410d6ce542097a32c43b00781b83adcb8c77f)
+[7m>>> mosquitto 2.0.18 Collecting legal info[27m
+LICENSE.txt: OK (sha256: d3c4ccace4e5d3cc89d34cf2a0bc85b8596bfc0a32b815d0d77f9b7c41b5350c)
+epl-v20: OK (sha256: 8c349f80764d0648e645f41ef23772a70c995a0924b5235f735f4a3d09df127c)
+edl-v10: OK (sha256: 86fc4a3f97cb769c04e8da557036c1066eb8bb22b2d0a5dd31464990fe84047c)
+[7m>>> libegl  Collecting legal info[27m
+[7m>>> libgbm  Collecting legal info[27m
+[7m>>> host-patchelf 0.13 Collecting legal info[27m
+COPYING: OK (sha256: 8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903)
+[7m>>> pigpio 79 Collecting legal info[27m
+UNLICENCE: OK (sha256: 6a90b88421a0d9b090e121daa11b3c6d55eed5eeb3281a2fcc454d6a28b5547c)
+[7m>>> rng-tools 6.16 Collecting legal info[27m
+COPYING: OK (sha256: 8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643)
+[7m>>> rpi-firmware 93d3f791a28ab369a62d2baf06035fc533b00864 Collecting legal info[27m
+boot/LICENCE.broadcom: OK (sha256: c7283ff51f863d93a275c66e3b4cb08021a5dd4d8c1e7acc47d872fbe52d3d6b)
+[7m>>> rpi-userland 14b90ff9d9f031391a299e6e006965d02bfd1bb1 Collecting legal info[27m
+LICENCE: OK (sha256: bee6f1249175683d8610651706e1aa7dffcbfd3f9c4c05bc1e5ab34f313c2db5)
+[7m>>> runc 1.1.9 Collecting legal info[27m
+LICENSE: OK (sha256: 552a739c3b25792263f731542238b92f6f8d07e9a488eae27e6c4690038a8243)
+[7m>>> uboot-tools 2021.07 Collecting legal info[27m
+Licenses/gpl-2.0.txt: OK (sha256: 8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643)
+[7m>>> wireless-regdb 2023.09.01 Collecting legal info[27m
+LICENSE: OK (sha256: 678b0df753c86198fc496d1f1033429bbd57f101472132ee7eaaf9f5e0a7fae1)
+[7m>>> wpa_supplicant 2.10 Collecting legal info[27m
+README: OK (sha256: af01e1d1ee065a1054d20ebe8a78a016f1fb1133b73e6a9d50801b165bb280c7)
+[7m>>> linux custom Collecting legal info[27m
+[7m>>> host-xz 5.4.4 Collecting legal info[27m
+COPYING: OK (sha256: 72d7ef9c98be319fd34ce88b45203b36d5936f9c49e82bf3198ffee5e0c7d87e)
+COPYING.GPLv2: OK (sha256: 8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643)
+COPYING.GPLv3: OK (sha256: 3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986)
+COPYING.LGPLv2.1: OK (sha256: dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551)
+[7m>>> host-acl 2.3.1 Collecting legal info[27m
+doc/COPYING: OK (sha256: a45a845012742796534f7e91fe623262ccfb99460a2bd04015bd28d66fba95b8)
+doc/COPYING.LGPL: OK (sha256: 01b1f9f2c8ee648a7a596a1abe8aa4ed7899b1c9e5551bda06da6e422b04aa55)
+[7m>>> host-attr 2.5.1 Collecting legal info[27m
+doc/COPYING: OK (sha256: 98f318493be6b08bff3cd295791cde06c54e17882a3c74a1ed245eaa02533d52)
+doc/COPYING.LGPL: OK (sha256: 5decad7e58d90d44335bf2f45ce27563bd911065c6a1a02dfa7647c4efee75c8)
+[7m>>> host-fakeroot 1.32.1 Collecting legal info[27m
+COPYING: OK (sha256: fc82ca8b6fdb18d4e3e85cfd8ab58d1bcd3f1b29abe782895abd91d64763f8e7)
+[7m>>> host-lz4 1.9.4 Collecting legal info[27m
+lib/LICENSE: OK (sha256: 8b58c446121a109ccf32edc094bba3010a3d85e4ee3702950db55e4d3e87736c)
+programs/COPYING: OK (sha256: 8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643)
+[7m>>> host-lzo 2.10 Collecting legal info[27m
+COPYING: OK (sha256: 8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643)
+[7m>>> host-makedevs  Collecting legal info[27m
+[7m>>> host-mkpasswd  Collecting legal info[27m
+[7m>>> host-squashfs 4.6.1 Collecting legal info[27m
+COPYING: OK (sha256: 8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643)
+[7m>>> host-zstd 1.5.5 Collecting legal info[27m
+LICENSE: OK (sha256: 7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8)
+COPYING: OK (sha256: f9c375a1be4a41f7b70301dd83c91cb89e41567478859b77eef375a52d782505)
+[7m>>> boardid v1.14.0 Collecting legal info[27m
+LICENSES/Apache-2.0.txt: OK (sha256: 074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff)
+[7m>>> erlinit v1.13.0 Collecting legal info[27m
+LICENSE: OK (sha256: a313bcd5f17638d66753aa15c9fbe52a955be2e07e1a4ec880e8d4acb8098438)
+[7m>>> nbtty v0.4.1 Collecting legal info[27m
+COPYING: OK (sha256: 32b1062f7da84967e7019d01ab805935caa7ab7321a7ced0e30ebe75e5df1670)
+[7m>>> nerves-config 0.7 Collecting legal info[27m
+[7m>>> nerves_heart v2.3.0 Collecting legal info[27m
+LICENSES/Apache-2.0.txt: OK (sha256: 074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff)
+[7m>>> rpi-distro-firmware-nonfree 88aa085bfa1a4650e1ccd88896f8343c22a24055 Collecting legal info[27m
+debian/copyright: OK (sha256: 8eac53f5b6f873de238ba57c46edffdd62c9a283d5995140f96fdd51d3145dc6)
+[7m>>> host-localedef 2.38-27-g750a45a783906a19591fb8ff6b7841470f1f5701 Collecting legal info[27m
+WARNING: the Buildroot source code has not been saved
+WARNING: toolchain-external-custom: cannot save license (TOOLCHAIN_EXTERNAL_CUSTOM_LICENSE_FILES not defined)
+WARNING: linux-custom: cannot save license (LINUX_LICENSE_FILES not defined)
+WARNING: localedef-2.38-27-g750a45a783906a19591fb8ff6b7841470f1f5701: cannot save license (HOST_LOCALEDEF_LICENSE_FILES not defined)
+Legal info produced in /home/pizzuto/Development/nerves_poncho/firmware/deps/nerves_system_rpi4/.nerves/artifacts/nerves_system_rpi4-portable-1.26.0/legal-info
